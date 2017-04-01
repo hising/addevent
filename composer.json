@@ -1,0 +1,22 @@
+{
+    "name": "hising/addevent",
+    "description": "A simple standalone lib for adding events to calendars",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mattias Hising",
+            "email": "hising@gmail.com"
+        }
+    ],
+
+    "require": {
+        "php": ">=7.0"
+    },
+
+    "autoload": {
+        "psr-0" : {
+            "AddEvent" : "src"
+        }
+    }
+}

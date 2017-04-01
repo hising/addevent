@@ -8,15 +8,15 @@ class Event {
     public $startTime;
     public $endTime;
     public $title;
-    public $allDay;
+    public $allDay = false;
     public $url;
     public $created;
     public $edited;
     public $id;
     public $location;
-    public $attendees;
-    public $attachments;
-    public $reminders;
+    public $attendees = [];
+    public $attachments = [];
+    public $reminders = [];
 
     /**
      * Event constructor.
@@ -29,6 +29,8 @@ class Event {
         $this->startTime = $startTime;
         $this->endTime = $endTime;
         $this->title = $title;
+        $this->created = new DateTime();
+        $this->edited = new DateTime();
     }
 
     /**

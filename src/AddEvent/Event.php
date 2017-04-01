@@ -104,29 +104,27 @@ class Event {
     }
 
     /**
-     * @param mixed $attendees
+     * @param Attendee $attendee
      */
-    public function setAttendees(array $attendees)
+    public function addAttendee(Attendee $attendee)
     {
-        $this->attendees = $attendees;
+        $this->attendees[] = $attendee;
     }
 
     /**
-     * @param mixed $attachments
+     * @param Attachment $attachment
      */
-    public function setAttachments(array $attachments)
+    public function addAttachement(Attachment $attachment)
     {
-        $this->attachments = $attachments;
+        $this->attachments[] = $attachment;
     }
 
     /**
-     * @param mixed $reminders
+     * @param Reminder $reminder
      */
-    public function setReminders(array $reminders)
+    public function addReminder(Reminder $reminder)
     {
-        $this->reminders = $reminders;
+        $this->reminders[] = $reminder;
     }
-
-
 
 }
